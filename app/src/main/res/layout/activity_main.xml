@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dương Ngọc Danh"
+        android:textColor="@color/mainColor"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="30dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there!"
+        android:textSize="30dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="50dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="30dp"
+        android:layout_marginTop="0dp"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="50dp"
+        app:hintTextColor="@color/mainColor"
+        style="@style/LoginTextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        style="@style/LoginTextInputLayoutStyle"
+        app:hintTextColor="@color/mainColor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:passwordToggleEnabled="true"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password?"
+        android:textColor="@color/mainColor"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"></TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:backgroundTint="@color/mainColor"
+        android:paddingBottom="10dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textSize="20dp"></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textColor="#B7B7B7"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/fb"></ImageView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_margin="10dp"
+                android:layout_height="30dp"
+                android:src="@drawable/instagram"></ImageView>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/linkedin"></ImageView>
+        </LinearLayout>
+
+
+    <!--    phần footer-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#858484"
+
+                android:text="Don't have an account?">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtSignin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign up"
+                android:textColor="#858484"
+                android:textSize="19dp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
